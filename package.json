@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.5.1",
+    "jquery-form": "^4.3.0",
+    "jquery-validation": "^1.19.3",
+    "sweetalert2": "^10.15.5",
+    "throttle-debounce": "^3.0.1"
+  }
+}

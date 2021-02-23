@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jquery Form Validation</title>
+
+    <!--Jquery-->
+<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>-->
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <!--Jquery Form-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js" integrity="sha512-YUkaLm+KJ5lQXDBdqBqk7EVhJAdxRnVdT2vtCzwPHSweCzyMgYV/tgGF4/dCyqtCC2eCphz0lRQgatGVdfR0ww==" crossorigin="anonymous"></script>
+
+    <!--Jquery Validation-->
+<!--    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>-->
+<!--    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/additional-methods.min.js"></script>-->
+    <script src="./node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="./node_modules/jquery-validation/dist/additional-methods.min.js"></script>
+
+
+    <!--Sweet Alert-->
+<!--    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>-->
+    <script src="./node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="./node_modules/sweetalert2/dist/sweetalert2.min.css"/>
+
+    <!--axios-->
+<!--    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>-->
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+
+    <!--debounce throttle-->
+    <!--<script src="./node_modules/throttle-debounce/cjs/index.js"></script>
+    <script src="./node_modules/throttle-debounce/esm/index.js"></script>
+    <script src="./node_modules/throttle-debounce/umd/index.js"></script>-->
+
+    <style>
+        .error{
+            color:#980000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" role="main">
+        <h1> Jquery Validation Test</h1>
+        <hr/>
+
+        <form id="signupForm" action="" method="POST">
+            <div class="form-group">
+                <label for="exampleInputEmail">Email address :</label>
+                <input type="email" class="form-control" name="exampleInputEmail" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword">Password : </label>
+                <input type="password" class="form-control" name="exampleInputPassword" id="exampleInputPassword" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputConfirmPassword">Confirm Password : </label>
+                <input type="password" class="form-control" name="exampleInputConfirmPassword" id="exampleInputConfirmPassword" placeholder="Confirm Password">
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary" name="btnSubmit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
+<script src="./js/index_html.js"></script>
