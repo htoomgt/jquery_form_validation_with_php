@@ -1,4 +1,4 @@
-#Project of jquery form validation with Pure PHP
+# Project of jquery form validation with Pure PHP
 
 To test html form submit with jquery validation plugin and form plugin
 
